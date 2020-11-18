@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis libros - Comparto libros</title>
+    <title>Todos los libros - Comparto libros</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/todos-libros.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 </head>
 <body class="">
@@ -14,7 +15,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="mis-libros.html">
                 <div class="logo">
-                  <i class="fa fa-book" aria-hidden="true"></i> COMPARTO LIBROS
+                    <i class="fa fa-book" aria-hidden="true"></i> COMPARTO LIBROS
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,10 +24,10 @@
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="mis-libros.html">Mis libros <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="mis-libros.html">Mis libros</a>
+                </li>
+                <li class="nav-item active">
                   <a class="nav-link" href="todos-libros.html">Todos los libros</a>
                 </li>
                 <li class="nav-item">
@@ -42,16 +43,22 @@
     </header>
     <!--AQUÍ TERMINA EL HEADER-->
     <main class="container card pt-3 pb-3 mt-4">
-        <div class="buttons-section  d-flex justify-content-end">
-            <a href="" class="btn btn-danger mr-2">
-                ELIMINAR EN MASA
-            </a>
-            <a href="crear-editar-libros.html" class="btn btn-primary">
-                AGREGAR
-            </a>
+        <div class="row">
+            <div class="col-12 offset-4 col-md-4">
+                <form class="row">
+                    <div class="form-group col-10 pr-0">
+                        <input type="text" class="form-control" id="inputPassword2" placeholder="Buscar">
+                    </div>
+                    <div class="col-2 pl-0">
+                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    </button>
+                    </form>
+            </div>
         </div>
+        
         <div class="row container-libros mt-4">
-            <div class="col-12 col-sm-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
                 <article class="card">
                     <img class="card-img-top" src="https://i.redd.it/w3kr4m2fi3111.png" alt="Card image cap">
                     <div class="card-body">
@@ -62,22 +69,13 @@
                       </p>
                     </div>
                     <div class="card-footer">
-                        <label class="btn btn-dark mb-0" data-toggle="tooltip" data-placement="top" title="Seleccionar libro">
-                            <input type="checkbox">
-                        </label>
-                        <a href="" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Editar libro">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                        </a>
-                        <a href="" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Compartir libro en redes">
-                            <i class="fa fa-share-alt" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-                            <i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Eliminar libro"></i>
+                        <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
+                            SOLICITAR
                         </a>
                     </div>
                   </article>
-            </div>
-            <div class="col-12 col-sm-3 mb-4">
+            </div>  
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
                 <article class="card">
                     <img class="card-img-top" src="https://i.redd.it/w3kr4m2fi3111.png" alt="Card image cap">
                     <div class="card-body">
@@ -88,22 +86,13 @@
                       </p>
                     </div>
                     <div class="card-footer">
-                        <label class="btn btn-dark mb-0" data-toggle="tooltip" data-placement="top" title="Seleccionar libro">
-                            <input type="checkbox">
-                        </label>
-                        <a href="" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Editar libro">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                        </a>
-                        <a href="" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Compartir libro en redes">
-                            <i class="fa fa-share-alt" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-                            <i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Eliminar libro"></i>
+                        <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
+                            SOLICITAR
                         </a>
                     </div>
                   </article>
-            </div>
-            <div class="col-12 col-sm-3 mb-4">
+            </div>  
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
                 <article class="card">
                     <img class="card-img-top" src="https://i.redd.it/w3kr4m2fi3111.png" alt="Card image cap">
                     <div class="card-body">
@@ -114,22 +103,13 @@
                       </p>
                     </div>
                     <div class="card-footer">
-                        <label class="btn btn-dark mb-0" data-toggle="tooltip" data-placement="top" title="Seleccionar libro">
-                            <input type="checkbox">
-                        </label>
-                        <a href="" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Editar libro">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                        </a>
-                        <a href="" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Compartir libro en redes">
-                            <i class="fa fa-share-alt" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-                            <i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Eliminar libro"></i>
+                        <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
+                            SOLICITAR
                         </a>
                     </div>
                   </article>
-            </div>
-            <div class="col-12 col-sm-3 mb-4">
+            </div>  
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
                 <article class="card">
                     <img class="card-img-top" src="https://i.redd.it/w3kr4m2fi3111.png" alt="Card image cap">
                     <div class="card-body">
@@ -140,21 +120,12 @@
                       </p>
                     </div>
                     <div class="card-footer">
-                        <label class="btn btn-dark mb-0" data-toggle="tooltip" data-placement="top" title="Seleccionar libro">
-                            <input type="checkbox">
-                        </label>
-                        <a href="" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Editar libro">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                        </a>
-                        <a href="" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Compartir libro en redes">
-                            <i class="fa fa-share-alt" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-                            <i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Eliminar libro"></i>
+                        <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
+                            SOLICITAR
                         </a>
                     </div>
                   </article>
-            </div>
+            </div>  
             <nav aria-label="Page navigation example" class="col-12 d-flex justify-content-center">
                 <ul class="pagination">
                   <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
@@ -165,6 +136,7 @@
                 </ul>
               </nav>
         </div>
+
     </main>
 </body>
 <script src="js/jquery.js"></script>
@@ -177,16 +149,72 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Confirmación eliminación</h5>
+          <h5 class="modal-title" id="exampleModalLabel">¿Ofrecer dinero por el libro proponer cambio?</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-            ¿Realmente desea eliminar el libro?
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#ofrecer-dinero" role="tab" aria-controls="home" aria-selected="true">Ofrecer dinero</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#solicitar-cambio" role="tab" aria-controls="profile" aria-selected="false">Solicitar cambio</a>
+                </li>
+
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="ofrecer-dinero" role="tabpanel" aria-labelledby="home-tab">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Cantidad a ofrecer</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mínimo: $1.000">
+                        </div>
+                      </form>
+                </div>
+                <div class="tab-pane fade" id="solicitar-cambio" role="tabpanel" aria-labelledby="profile-tab">
+                    <form class="row">
+                        <div class="form-group col-10 pr-0">
+                          <input type="text" class="form-control" id="inputPassword2" placeholder="Buscar">
+                        </div>
+                        <div class="col-2 pl-0">
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        </button>
+                      </form>
+                    <ul class="list-group list-group-flush overflow-auto lista-solicitar-libros">
+                        <li class="list-group-item">
+                            <label class="btn btn-secondary mb-0 mr-3">
+                                <input type="checkbox">
+                            </label>Nombre del libro #1
+                        </li>
+                        <li class="list-group-item">
+                            <label class="btn btn-secondary mb-0 mr-3">
+                                <input type="checkbox">
+                            </label>Nombre del libro #2
+                        </li>
+                        <li class="list-group-item">
+                            <label class="btn btn-secondary mb-0 mr-3">
+                                <input type="checkbox">
+                            </label>Nombre del libro #3
+                        </li>
+                        <li class="list-group-item">
+                            <label class="btn btn-secondary mb-0 mr-3">
+                                <input type="checkbox">
+                            </label>Nombre del libro #4
+                        </li>
+                        <li class="list-group-item">
+                            <label class="btn btn-secondary mb-0 mr-3">
+                                <input type="checkbox">
+                            </label>Nombre del libro #5
+                        </li>
+                      </ul>
+                </div>
+              </div>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-danger">Eliminar</button>
+            <button type="button" class="btn btn-primary">SOLICITAR</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCELAR</button>
         </div>
       </div>
