@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis libros - Comparto libros</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+</head>
+<body class="">
+    <!--AQUÍ EMPIEZA EL HEADER-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="mis-libros.html">
+                <div class="logo">
+                    COMPARTO LIBROS
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="mis-libros.html">Mis libros <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="todos-libros.html">Todos los libros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="solicitudes.html">Solicitudes</a>
+                </li>
+                
+              </ul>
+              <a href="login.html" class="logout-link">
+                  Logout
+              </a>
+            </div>
+          </nav>
+    </header>
+    <!--AQUÍ TERMINA EL HEADER-->
+    <main class="container card pt-3 pb-3 mt-4">
+        <div class="buttons-section  d-flex justify-content-end">
+            <a href="" class="btn btn-danger mr-2">
+                ELIMINAR EN MASA
+            </a>
+            <a href="" class="btn btn-primary">
+                AGREGAR
+            </a>
+        </div>
+        <div class="row container-libros mt-4">
+            <div class="col-12 col-sm-3 mb-4">
+                <article class="card">
+                    <img class="card-img-top" src="https://i.redd.it/w3kr4m2fi3111.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del libro</h5>
+                      <p class="card-text">
+                        Short description   
+                        <div class="blockquote-footer">Autor</div> 
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                        <label class="btn btn-dark mb-0" data-toggle="tooltip" data-placement="top" title="Seleccionar libro">
+                            <input type="checkbox">
+                        </label>
+                        <a href="" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Editar libro">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+                        <a href="" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Compartir libro en redes">
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Eliminar libro"></i>
+                        </a>
+                    </div>
+                  </article>
+            </div>
+            <div class="col-12 col-sm-3 mb-4">
+                <article class="card">
+                    <img class="card-img-top" src="https://i.redd.it/w3kr4m2fi3111.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del libro</h5>
+                      <p class="card-text">
+                        Short description   
+                        <div class="blockquote-footer">Autor</div> 
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                        <label class="btn btn-dark mb-0" data-toggle="tooltip" data-placement="top" title="Seleccionar libro">
+                            <input type="checkbox">
+                        </label>
+                        <a href="" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Editar libro">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+                        <a href="" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Compartir libro en redes">
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Eliminar libro"></i>
+                        </a>
+                    </div>
+                  </article>
+            </div>
+            <div class="col-12 col-sm-3 mb-4">
+                <article class="card">
+                    <img class="card-img-top" src="https://i.redd.it/w3kr4m2fi3111.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del libro</h5>
+                      <p class="card-text">
+                        Short description   
+                        <div class="blockquote-footer">Autor</div> 
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                        <label class="btn btn-dark mb-0" data-toggle="tooltip" data-placement="top" title="Seleccionar libro">
+                            <input type="checkbox">
+                        </label>
+                        <a href="" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Editar libro">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+                        <a href="" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Compartir libro en redes">
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Eliminar libro"></i>
+                        </a>
+                    </div>
+                  </article>
+            </div>
+            <div class="col-12 col-sm-3 mb-4">
+                <article class="card">
+                    <img class="card-img-top" src="https://i.redd.it/w3kr4m2fi3111.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del libro</h5>
+                      <p class="card-text">
+                        Short description   
+                        <div class="blockquote-footer">Autor</div> 
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                        <label class="btn btn-dark mb-0" data-toggle="tooltip" data-placement="top" title="Seleccionar libro">
+                            <input type="checkbox">
+                        </label>
+                        <a href="" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Editar libro">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+                        <a href="" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Compartir libro en redes">
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Eliminar libro"></i>
+                        </a>
+                    </div>
+                  </article>
+            </div>
+            <nav aria-label="Page navigation example" class="col-12 d-flex justify-content-center">
+                <ul class="pagination">
+                  <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+        </div>
+    </main>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</html>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Confirmación eliminación</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            ¿Realmente desea eliminar el libro?
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger">Eliminar</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCELAR</button>
+        </div>
+      </div>
+    </div>
+  </div>

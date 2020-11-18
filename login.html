@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Comparto libros</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body class="d-flex align-items-center">
+    <section class="container">
+        <div class="col-12 offset-sm-4 col-sm-4 card container-forms">
+            <div class="logo">
+                COMPARTO LIBROS
+            </div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#login" role="tab" aria-controls="home" aria-selected="true">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#registro" role="tab" aria-controls="profile" aria-selected="false">Registro</a>
+                </li>
+
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="home-tab">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Correo</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Contraseña</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                        </div>
+                        <div>
+                            <a  href="">
+                                Olvidé mi contraseña
+                            </a>
+                        </div>
+                        <button type="submit" class="btn btn-primary">INGRESA</button>
+                      </form>
+                </div>
+                <div class="tab-pane fade" id="registro" role="tabpanel" aria-labelledby="profile-tab">
+                    <form method="get" action="activar-cuenta.html">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
+                          </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Correo</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Contraseña</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Confirmar contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirmar contraseña">
+                          </div>
+                        <button type="submit" class="btn btn-primary">REGSÍSTRATE</button>
+                      </form>
+                </div>
+              </div>
+        </div>
+    </section>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
